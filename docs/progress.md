@@ -12,7 +12,7 @@
 - [ v]  기본 CSS 파일 생성 (Reset CSS 포함)
 
 ### 2. 시멘틱 마크업 계획
-- [ ]  페이지 구조 분석 및 적절한 시멘틱 태그 선정 (header, nav, main, section, article, footer 등)
+- [ v]  페이지 구조 분석 및 적절한 시멘틱 태그 선정 (header, nav, main, section, article, footer 등)
 - [ ]  접근성을 고려한 태그 사용 계획
 
 ### 3. 반응형 웹 구현 계획
