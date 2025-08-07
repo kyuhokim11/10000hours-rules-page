@@ -1,5 +1,32 @@
 /* style.css */
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('../assets/fonts/GmarketSansBold.otf') format('opentype');   
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('../assets/fonts/GmarketSansMedium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('../assets/fonts/GmarketSansLight.otf') format('opentype');
+}
+@font-face {
+    font-family: 'tvN 즐거운이야기OTF Bold';
+    src: url('../assets/fonts/tvN\ 즐거운이야기OTF\ Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'tvN 즐거운이야기OTF Medium';
+    src: url('../assets/fonts/tvN\ 즐거운이야기OTF\ Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'tvN 즐거운이야기OTF Light';
+    src: url('../assets/fonts/tvN\ 즐거운이야기OTF\ Light.otf') format('opentype');
+}
+
 
 body {
+    font-family: 'GmarketSansMedium', sans-serif;
+    color: #fff;
     background-color: #5B2386;
 }
