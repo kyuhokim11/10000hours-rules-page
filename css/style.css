@@ -1,4 +1,7 @@
 /* style.css */
+
+@import url(./reset.css);
+
 @font-face {
     font-family: 'GmarketSansBold';
     src: url('../assets/fonts/GmarketSansBold.otf') format('opentype');   
@@ -24,9 +27,65 @@
     src: url('../assets/fonts/tvN\ 즐거운이야기OTF\ Light.otf') format('opentype');
 }
 
-
+/* 모바일 퍼스트 기본 스타일( */
 body {
+    display: flex;
+    justify-content: center;
     font-family: 'GmarketSansMedium', sans-serif;
     color: #fff;
     background-color: #5B2386;
 }
+
+
+.site-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.site-header__logo {
+    max-width: 278px;
+}
+.site-header__slogan {
+    font-family: 'tvN 즐거운이야기OTF Medium';
+    font-size: 22px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.quote__text p {
+  margin: 4px 0;
+  text-align: center;
+}
+.quote__icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* 데스크톱 사이즈 */
+/* 작업하는동안 구분을 위해 배경색을 다르게 설정해둠! */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        font-family: 'GmarketSansMedium', sans-serif;
+        background-color: green; 
+    }
+
+   
+}
+
+
+

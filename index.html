@@ -1,70 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1만시간의 법칙</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1만시간의 법칙</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <!-- 시멘틱 마크업 -->
-<div class="container">
-   <header>
-    <!-- 헤더에는 icon-title.svg 로 표현하고, w 546 h 265-->
-     <!-- 이미지 하단에 “연습은 어제의 당신보다 당신을 더 낫게 만든다.” 텍스트 추가 -->
-        <img src="./assets/icons/icon-title.svg" alt="1만시간의 법칙" width="546" height="265">
+  <div class="container">
+    <header class="site-header">
+      <img class="site-header__logo" src="./assets/icons/icon-title.svg" alt="1만시간의 법칙" />
+      <p class="site-header__slogan">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
+    </header>
 
-        <p>연습은 어제의 당신보다 당신을 더 낫게 만든다.</p>
-       </header>
-   <main>
-    <!-- 메인은 크게 5개로 나누고, 각각에 하위요소들을 넣는다 -->
-        <section class="section-1">
-            <!-- '1만 시간의 법칙은 
-어떤 분야의 전문가가 되기 위해서는
- 최소한 1만 시간의 훈련이 필요하다는 법칙이다.' 이 내용과 좌,우에 쌍따옴표 아이콘을 배치한다 -->
-            <img src="./assets/icons/icon-quote-left.svg" alt="왼쪽 따옴표 아이콘" class="quote-icon left">
-            <p>“1만 시간의 법칙은 어떤 분야의 전문가가 되기 위해서는 최소한 1만 시간의 훈련이 필요하다는 법칙이다.”</p>
-            <img src="./assets/icons/icon-quote-right.svg" alt="오른쪽 따옴표 아이콘" class="quote-icon right">
-        </section>
-        <section class="section-2">
-            <!-- 두개의 요소: '나는 ____ 전문가가 될것이다', 그래서 앞으로 매일 하루에 _____ 시간씩 훈련할 것디아.
-             ____ 공백이 위치한곳에 하얀 배경은 inputbox 디자인으로 빈칸을 만들것이다 -->
-             <label for="expert-field" class="visually-hidden">전문 분야</label>
-            <p>나는 
-            <input type="text" placeholder="예) 프로그래밍" class="input-box"/>
-                전문가가 될 것이다</p>
-            <p>그래서 앞으로 매일 하루에 
-            <input type="number" placeholder="예) 5시간" class="input-box"/>
-                 시간씩 훈련할 것이다</p>
-        </section>
-        <section class="section-3">
-            <!-- '나는 며칠 동안 훈련을 해야 1만 시간이 될까?' 로 버튼모양을 그리고, 우측에 손가락아이콘(icon-touch.svg) -->
-            <button class="calculate-button">
-                나는 며칠 동안 훈련을 해야 1만 시간이 될까?
-            </button>
-            <img src="./assets/icons/icon-touch.svg" alt="손가락 아이콘" class="touch-icon">
-        </section>
-        <section class="section-4">
-            <!-- 당신은 프로그래밍 전문가가 되기 위해서
-             대략 5110 일 이상 훈련하셔야 합니다!:), '프로그래밍', '5110' 은 글자를 크고 굵게 -->
-            <p>당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서</p>
-            <p class="highlight">대략 <strong>5110</strong> 일 이상 훈련하셔야 합니다! :)</p>
+    <main class="main-content">
+      <section class="quote-section">
+        <div class="quote">
+          <img src="./assets/icons/icon-quote-left.svg" alt="왼쪽 따옴표 아이콘" class="quote__icon quote__icon--left" />
+          <blockquote class="quote__text">
+            <p>1만 시간의 법칙은</p>
+            <p>어떤 분야의 전문가가 되기 위해서는</p>
+            <p>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
+          </blockquote>
+          <img src="./assets/icons/icon-quote-right.svg" alt="오른쪽 따옴표 아이콘" class="quote__icon quote__icon--right" />
+        </div>
+      </section>
 
-        </section>
-        <section class="section-5">
-           <!-- 두개의 버튼을 수평으로 정렬 -->
-            <button class="action-button">훈련하러 가기 GO! GO!</button>
-            <button class="action-button">공유하기</button>
-        </section>
-    
-    
-   </main>
-    <footer>
-          <!-- 푸터에는 위니브로고(icon-logo.svg) 와 '본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.
-수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.' 메시지를 넣는다 -->
-        <img src="./assets/icons/icon-logo.svg" alt="위니브 로고" width="100" height="50">
-        <p>본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다. 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
-     </footer>
-</div>
+      <section class="input-section">
+        <form class="goal-form">
+          <p>나는
+            <input type="text" placeholder="예) 프로그래밍" class="goal-form__input" name="field" required />
+            전문가가 될 것이다
+          </p>
+          <p>그래서 앞으로 매일 하루에
+            <input type="number" placeholder="예) 5시간" class="goal-form__input" name="time" required />
+            시간씩 훈련할 것이다
+          </p>
+        </form>
+      </section>
+
+      <section class="calculate-section">
+        <button class="calculate-button">
+          나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+        </button>
+        <img src="./assets/icons/icon-touch.svg" alt="손가락 아이콘" class="calculate-section__icon" />
+      </section>
+
+      <section class="result-section" aria-live="polite">
+        <p>당신은 <strong class="result-section__field">프로그래밍</strong> 전문가가 되기 위해서</p>
+        <p class="result-section__highlight">대략 <strong class="result-section__days">5110</strong> 일 이상 훈련하셔야 합니다! :)</p>
+      </section>
+
+      <section class="action-section">
+        <button class="action-button action-button--primary">훈련하러 가기 GO! GO!</button>
+        <button class="action-button action-button--share">공유하기</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="./assets/icons/icon-logo.svg" alt="위니브 로고" width="100" height="50" />
+      <p>본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다. 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+    </footer>
+  </div>
 </body>
 </html>
