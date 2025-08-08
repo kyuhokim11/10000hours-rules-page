@@ -15,16 +15,16 @@
     src: url('../assets/fonts/GmarketSansLight.otf') format('opentype');
 }
 @font-face {
-    font-family: 'tvN 즐거운이야기OTF Bold';
-    src: url('../assets/fonts/tvN\ 즐거운이야기OTF\ Bold.otf') format('opentype');
+    font-family: 'tvNJoyBold';
+    src: url('../assets/fonts/tvN-Joy-Bold.otf') format('opentype');
 }
 @font-face {
-    font-family: 'tvN 즐거운이야기OTF Medium';
-    src: url('../assets/fonts/tvN\ 즐거운이야기OTF\ Medium.otf') format('opentype');
+    font-family: 'tvNJoyMedium';
+    src: url('../assets/fonts/tvN-Joy-Medium.otf') format('opentype');
 }
 @font-face {
-    font-family: 'tvN 즐거운이야기OTF Light';
-    src: url('../assets/fonts/tvN\ 즐거운이야기OTF\ Light.otf') format('opentype');
+    font-family: 'tvNJoyLight';
+    src: url('../assets/fonts/tvN-Joy-Light.otf') format('opentype');
 }
 
 
@@ -52,7 +52,7 @@ body {
     max-width: 278px;
 }
 .site-header__slogan {
-    font-family: 'tvN 즐거운이야기OTF Bold';
+    font-family: 'tvNJoyBold';
     font-size: 22px;
     color: #F5DF4D;
 }
@@ -215,7 +215,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     padding: 24px;
-    font-family: 'tvN 즐거운이야기OTF Bold';
+    font-family: 'tvNJoyBold';
 }
 .modal h2{
     display: flex;
@@ -266,7 +266,7 @@ display: flex;
     max-width: 564px;
 }
 .site-header__slogan {
-    font-family: 'tvN 즐거운이야기OTF Medium';
+    font-family: 'tvNJoyMedium';
     font-size: 36px;
     color: #F5DF4D;
 }
@@ -434,7 +434,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px;
-    font-family: 'tvN 즐거운이야기OTF Bold';
+    font-family: 'tvNJoyBold';
 }
 .modal h2{
     display: flex;
