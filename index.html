@@ -6,8 +6,7 @@
   <title>1만시간의 법칙</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
-<body>
-  <div class="container">
+<body> 
     <header class="site-header">
       <img class="site-header__logo" src="./assets/icons/icon-title.svg" alt="1만시간의 법칙" />
       <p class="site-header__slogan">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
@@ -16,13 +15,13 @@
     <main class="main-content">
       <section class="quote-section">
         <div class="quote">
-          <img src="./assets/icons/icon-quote-left.svg" alt="왼쪽 따옴표 아이콘" class="quote__icon quote__icon--left" />
+          <img src="./assets/icons/icon-quote-left.svg" alt="왼쪽 따옴표 아이콘" class="quote__icon" />
           <blockquote class="quote__text">
-            <p>1만 시간의 법칙은</p>
+            <p><strong class="quote__text_strong">1만 시간의 법칙</strong>은</p>
             <p>어떤 분야의 전문가가 되기 위해서는</p>
             <p>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
           </blockquote>
-          <img src="./assets/icons/icon-quote-right.svg" alt="오른쪽 따옴표 아이콘" class="quote__icon quote__icon--right" />
+          <img src="./assets/icons/icon-quote-right.svg" alt="오른쪽 따옴표 아이콘" class="quote__icon" />
         </div>
       </section>
 
@@ -32,7 +31,7 @@
             <input type="text" placeholder="예) 프로그래밍" class="goal-form__input" name="field" required />
             전문가가 될 것이다
           </p>
-          <p>그래서 앞으로 매일 하루에
+          <p>그래서 앞으로 매일 하루에 <wbr>
             <input type="number" placeholder="예) 5시간" class="goal-form__input" name="time" required />
             시간씩 훈련할 것이다
           </p>
@@ -58,9 +57,27 @@
     </main>
 
     <footer class="site-footer">
-      <img src="./assets/icons/icon-logo.svg" alt="위니브 로고" width="100" height="50" />
-      <p>본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다. 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+      <img src="./assets/icons/icon-logo.svg" alt="위니브 로고" />
+      <p>본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.
+         </p>
+         <p> 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+    </footer>
+   <!-- 오버레이 모달 -->
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
+    <header class="modal_header">
+      <h2 id="modal-title">화이팅!!</h2>
+      <p>당신의 꿈을 응원합니다!</p>
+    </header>
+
+    <div class="modal_body">
+      <img class="modal_img" src="./assets/images/licat.png" />
+    </div>
+
+    <footer class="modal_footer">
+      <button class="modal_button" id="cancel-modal">종료하고 진짜 훈련하러 가기 GO!GO!</button>
     </footer>
   </div>
+</div>
 </body>
 </html>

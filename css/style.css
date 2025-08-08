@@ -27,27 +27,42 @@
     src: url('../assets/fonts/tvN\ 즐거운이야기OTF\ Light.otf') format('opentype');
 }
 
+
 /* 모바일 퍼스트 기본 스타일( */
-body {
+body {    
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-family: 'GmarketSansMedium', sans-serif;
     color: #fff;
     background-color: #5B2386;
 }
 
 
-.site-header {
-    text-align: center;
-    margin-bottom: 24px;
+.site-header {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 32px;
+    
 }
 
 .site-header__logo {
     max-width: 278px;
 }
 .site-header__slogan {
-    font-family: 'tvN 즐거운이야기OTF Medium';
+    font-family: 'tvN 즐거운이야기OTF Bold';
     font-size: 22px;
+    color: #F5DF4D;
+}
+
+
+.main-content {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
 }
 
 .quote {
@@ -55,10 +70,15 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  min-height: 68px;
+  margin-bottom: 60px;
+}
+.quote__text {
+    display: flex;
+    flex-direction: column;
+    gap: 14px
 }
 .quote__text p {
-  margin: 4px 0;
   text-align: center;
 }
 .quote__icon {
@@ -66,11 +86,162 @@ body {
   height: 20px;
 }
 
+.goal-form {
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 114px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 14px;
+}
 
-section {
+.goal-form p {
+    text-align: center;
+    line-height: 38px;
+}
+.goal-form__input {
+    min-height: 38px;
+    min-width: 156px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.calculate-section {
+    display: flex;
+    padding-left: 56px;
+    padding-right: 17px;
+    margin-bottom: 52px;
+}
+.calculate-button {
+    max-height: 72px;
+    padding: 20px 38px;
+    border-radius: 12px;
+    background-color: #F5EE21;
+    font-family: 'GmarketSansBold';
+    color:#5B2386;
+    line-height: 16px;
+    
+}
+.calculate-section__icon{
+    width: 43px;
+    margin-top: 40px;
+}
+
+.result-section {
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 52px;
+}
+.result-section p {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.result-section__field {
+    font-family: 'GmarketSansBold';
+  font-size: 24px;
+}
+.result-section__days {
+    font-family: 'GmarketSansBold';
+  font-size: 24px;
+}
+
+.action-section {
+display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 52px;
+}
+.action-button--primary {
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: #F5EE21;
+    font-family: 'GmarketSansBold';
+    font-size: 14px;
+    color:#5B2386;
+}
+.action-button--share{
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: #fff;
+    font-family: 'GmarketSansBold';
+    font-size: 14px;
+    color:#5B2386;
+}
+
+
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 48px;
+    gap: 12px;
+}
+.site-footer img { 
+    width: 125px;
+    height: 28px;
+}
+
+.site-footer p {
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 9px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.overlay {
+    position: absolute;
+    /* display: none; */
+}
+.modal {
+    background-color:#fff;
+    color: #5B2386;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family: 'tvN 즐거운이야기OTF Bold';
+}
+.modal h2{
     display: flex;
     justify-content: center;
+    font-size: 64px;
 }
+.modal p{
+    font-size: 36px;
+}
+
+.modal_img{
+    width: 240px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+
+}
+.modal_button{
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: #F5EE21;
+    font-family: 'GmarketSansBold';
+    font-size: 14px;
+    color:#5B2386;
+}
+
 
 
 
@@ -80,12 +251,215 @@ section {
     body {
         display: flex;
         justify-content: center;
-        font-family: 'GmarketSansMedium', sans-serif;
-        background-color: green; 
+        
+        
     }
+   .site-header {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 32px;
+}
 
-   
+.site-header__logo {
+    max-width: 564px;
+}
+.site-header__slogan {
+    font-family: 'tvN 즐거운이야기OTF Medium';
+    font-size: 36px;
+    color: #F5DF4D;
+}
+
+
+.main-content {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 68px;
+  margin-bottom: 60px;
+}
+.quote__text {
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+.quote__text_strong{
+    font-size: 24px;
+    font-family: 'GmarketSansBold';
+}
+.quote__text p {
+  text-align: center;
+}
+.quote__icon {
+  width: 36px;
+  height: 32px;
+}
+
+.goal-form {
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 114px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 24px;
+}
+
+.goal-form p {
+    text-align: center;
+    line-height: 38px;
+}
+.goal-form__input {
+    min-height: 56px;
+    min-width: 228px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.calculate-section {
+    display: flex;
+}
+.calculate-button {
+    max-height: 64px;
+    padding: 20px 38px;
+    border-radius: 12px;
+    background-color: #F5EE21;
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    color:#5B2386;
+    
+}
+.calculate-section__icon{
+    width: 64px;
+    margin-top: 40px;
+}
+
+.result-section {
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 52px;
+}
+.result-section p {
+    display: flex;
+    
+  font-size: 24px;
+  line-height: 72px;
+}
+
+.result-section__field {
+    margin-left: 12px;
+    margin-right: 12px;
+    font-family: 'GmarketSansBold';
+  font-size: 72px;
+}
+.result-section__days {
+    margin-left: 12px;
+    margin-right: 12px;
+    font-family: 'GmarketSansBold';
+  font-size: 72px;
+}
+
+.action-section {
+display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 52px;
+}
+.action-button--primary {
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: #F5EE21;
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    color:#5B2386;
+}
+.action-button--share{
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: #fff;
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    color:#5B2386;
 }
 
 
 
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 48px;
+    gap: 12px;
+}
+.site-footer img { 
+    width: 168px;
+    height: 36px;
+}
+
+.site-footer p {
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.modal {
+    width: 800px;
+    background-color:#fff;
+    color: #5B2386;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    font-family: 'tvN 즐거운이야기OTF Bold';
+}
+.modal h2{
+    display: flex;
+    justify-content: center;
+    font-size: 96px;
+}
+.modal p{
+    font-size: 36px;
+}
+
+.modal_img{
+    width: 438px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    
+
+}
+.modal_button{
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: #F5EE21;
+    font-family: 'GmarketSansBold';
+    font-size: 14px;
+    color:#5B2386;
+}
+
+   
+}
