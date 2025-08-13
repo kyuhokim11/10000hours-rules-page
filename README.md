@@ -12,18 +12,19 @@ HTML/CSS 기초 학습 후, 주어진 시안을 기반으로 제작한 반응형
 
 
 ## 📂 폴더 구조
-```10000hours-rules-page/
-├── index.html
-├── assets/
-│   ├── icons/
-│   ├── images/
-│   ├── fonts/
-├── css/
-│   ├── reset.css
-│   ├── style.css
-├── docs/
-│   ├── issues.md/
-│   ├── progress.md/ 
+```
+10000hours-rules-page/
+├── index.html                # 전체 페이지의 구조와 콘텐츠 정의
+├── assets/                   # 프로젝트에서 사용하는 정적 리소스 모음
+│   ├── icons/                 # SVG, PNG 등 아이콘 이미지
+│   ├── images/                # 페이지에 삽입되는 일반 이미지, 배경 이미지
+│   ├── fonts/                 # 웹폰트 파일 (woff, woff2 등)
+├── css/                      # 스타일 시트 모음
+│   ├── reset.css              # 브라우저 기본 스타일 초기화
+│   ├── style.css              # 전체 페이지 공통 및 섹션별 스타일 정의
+├── docs/                     # 개발 문서 및 기록
+│   ├── issues.md              # 개발 중 발견된 문제와 해결 과정 기록
+│   ├── progress.md            # 개발 진행 상황 및 작업 로그
 ```
 ## 📸 스크린샷 (Screenshots)
 1. **메인 화면** – 전체 레이아웃 및 타이틀 영역
