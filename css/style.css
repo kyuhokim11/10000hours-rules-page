@@ -26,7 +26,7 @@
     font-family: 'tvNJoyLight';
     src: url('../assets/fonts/tvN-Joy-Light.otf') format('opentype');
 }
-
+:focus-visible { outline: 3px solid #D97652; outline-offset: 3px; }
 
 /* 모바일 퍼스트 기본 스타일( */
 body {    
@@ -115,6 +115,7 @@ display: flex;
     padding-left: 56px;
     padding-right: 17px;
     margin-bottom: 52px;
+  padding-block: 24px; /* 상하 여백 */
 }
 .calculate-button {
     max-height: 72px;
@@ -138,6 +139,7 @@ display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 52px;
+  padding-block: 24px; /* 상하 여백 */
 }
 .result-section p {
   font-size: 12px;
@@ -160,6 +162,7 @@ display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 52px;
+  padding-block: 24px; /* 상하 여백 */
 }
 .action-button--primary {
     padding: 16px 24px;
@@ -203,8 +206,17 @@ display: flex;
     padding-right: 50px;
 }
 .overlay {
-    position: absolute;
-    display: none;
+  position: fixed;        /* 화면 전체 덮기 */
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  display: none;          /* 기본은 숨김 */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+/* 열렸을 때만 보이게 */
+.overlay.is-open {
+  display: flex;
 }
 .modal {
     background-color:#fff;
@@ -249,8 +261,12 @@ display: flex;
 /* 작업하는동안 구분을 위해 배경색을 다르게 설정해둠! */
 @media (min-width: 768px) {
     body {
-        display: flex;
-        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'GmarketSansMedium', sans-serif;
+    color: #fff;
+    background-color: #5B2386;
         
         
     }
@@ -285,7 +301,6 @@ display: flex;
   justify-content: center;
   align-items: center;
   min-height: 68px;
-  margin-bottom: 60px;
 }
 .quote__text {
     display: flex;
@@ -310,9 +325,6 @@ display: flex;
   justify-content: center;
   align-items: center;
   min-height: 114px;
-  margin-bottom: 80px;
-  margin-left: 20px;
-  margin-right: 20px;
   font-family: 'GmarketSansMedium', sans-serif;
   font-size: 24px;
 }
@@ -354,6 +366,7 @@ display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 52px;
+  padding-block: 24px; /* 상하 여백 */
 }
 .result-section p {
     display: flex;
@@ -382,6 +395,7 @@ display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 52px;
+  padding-block: 24px; /* 상하 여백 */
 }
 .action-button--primary {
     padding: 16px 24px;
