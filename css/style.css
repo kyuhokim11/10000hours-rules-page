@@ -5,27 +5,21 @@
 @font-face {
     font-family: 'GmarketSansBold';
     src: url('../assets/fonts/GmarketSansBold.otf') format('opentype');   
+    font-weight: 700;
 }
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('../assets/fonts/GmarketSansMedium.otf') format('opentype');
+    font-weight: 500;
 }
-@font-face {
-    font-family: 'GmarketSansLight';
-    src: url('../assets/fonts/GmarketSansLight.otf') format('opentype');
-}
+
 @font-face {
     font-family: 'tvNJoyBold';
     src: url('../assets/fonts/tvN-Joy-Bold.otf') format('opentype');
+    font-weight: 700;
 }
-@font-face {
-    font-family: 'tvNJoyMedium';
-    src: url('../assets/fonts/tvN-Joy-Medium.otf') format('opentype');
-}
-@font-face {
-    font-family: 'tvNJoyLight';
-    src: url('../assets/fonts/tvN-Joy-Light.otf') format('opentype');
-}
+
+
 :focus-visible { outline: 3px solid #D97652; outline-offset: 3px; }
 
 /* 모바일 퍼스트 기본 스타일( */
