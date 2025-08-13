@@ -31,7 +31,7 @@ HTML/CSS 기초 학습 후, 주어진 시안을 기반으로 제작한 반응형
 ![메인화면](https://kyuhokim11.github.io/10000hours-rules-page/assets/images/full-page.png)  
 2. **메인 화면 모달** 
 ![메인 화면 모달](https://kyuhokim11.github.io/10000hours-rules-page/assets/images/full-page-modal.png) 
-3. **모바일 브라우저 화면** – 모바일 브라우저 화면
+3. **모바일 화면** – 모바일 화면
 ![모바일 브라우저 화면](https://kyuhokim11.github.io/10000hours-rules-page/assets/images/full-page-mobile.png) 
 
 ---
